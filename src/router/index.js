@@ -9,10 +9,6 @@ import SysMenu from '@/basic/system/menu'
 import SysRole from '@/basic/system/role'
 import SysUser from '@/basic/system/user'
 
-// 融盛路由
-import RsRouter from '@/project-rs/router'
-// 泰康路由
-import TkRouter from '@/project-tk/router'
 // 国寿路由
 import GsRouter from '@/project-gs/router'
 
@@ -22,7 +18,7 @@ const BasicRouter = [
 	{ path: '/sys/role', component: SysRole, routes: [] },
 	{ path: '/sys/user', component: SysUser, routes: [] },
 ]
-const routers = [...BasicRouter, ...RsRouter, ...TkRouter, ...GsRouter];
+const routers = [...BasicRouter, ...GsRouter];
 
 // 路由
 const RouterView = () => (

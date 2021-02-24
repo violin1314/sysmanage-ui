@@ -26,7 +26,7 @@ class Login extends Component {
         return (
             <div className="login-box">
 				<Form onSubmit={this.handleSubmit} className="login-form">
-					<div className="login-title">商保两核服务系统</div>
+					<div className="login-title">服务系统</div>
 					<Form.Item className="login-input">
 						{getFieldDecorator('account', {
 							rules: [{ required: true, message: '请输入用户名！' }],
