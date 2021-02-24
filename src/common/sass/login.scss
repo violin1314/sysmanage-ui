@@ -1,0 +1,102 @@
+.login-box {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 100%;
+    background: url(../images/login-bg.png) no-repeat right center;
+    background-size: 600px;
+}
+.login-title {
+    margin-bottom: 50px;
+    line-height: 1;
+    text-align: center;
+    color: #303030;
+    font-size: 44px;
+    font-weight: bold;
+}
+.login-form {
+    width: 360px;
+    .login-input {
+        position: relative;
+        &:before {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            z-index: 2;
+            content: '';
+            margin-top: -12px;
+            width: 24px;
+            height: 24px;
+            background: url(../images/icon-user.png) no-repeat center;
+        }
+    }
+    .ant-input-lg {
+        padding-left: 62px;
+        line-height: 60px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 30px;
+        border: none;
+        background: #ebf0f6;
+    }
+    .password-input {
+        &:before {
+            background-image: url(../images/icon-pw.png);
+        }
+    }
+    .anticon {
+        font-size: 24px;
+    }
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+        padding-left: 62px;
+    }
+    .ant-input-affix-wrapper .ant-input-prefix {
+        left: 24px;
+        font-size: 26px;
+        color: #9a9899;
+    }
+
+    ::-webkit-input-placeholder{
+        color: #303030;
+    }
+
+    .ant-form-item {
+        margin-bottom: 26px;
+    }
+
+    .ant-checkbox-wrapper {
+        font-size: 18px;
+        color: #0088fe;
+    }
+    .ant-checkbox-inner {
+        width: 26px;
+        height: 25px;
+        border: none;
+        background: url(../images/checkoff.png);
+    }
+    .ant-checkbox-inner:after {
+        display: none !important;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background: url(../images/checkon.png);
+    }
+
+    .ant-form-explain {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.login-form-forgot {
+    float: left;
+}
+
+.login-button {
+    margin-top: 24px;
+    width: 100%;
+    font-size: 22px;
+    height: 68px;
+    border-radius: 34px;
+}
